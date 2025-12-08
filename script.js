@@ -22,24 +22,25 @@ let messages=[];
 
 //check username
 if (username.length <3){
-    isValid=false;
+    isValid= false;
     messages.push("Username must be at least 3 characters.");
 }
 
 //check email
-if (!email.includes('@') ('.')){
+if (!email.includes('@') || !email.includes('.')){
     isValid=false;
     messages.push("Please enter a valid email address.");
 }
 
 //check password
-if (password.length <6){
+if (password.length <8){
     isValid=false;
-    messages.push("Password must be at least six characters long.");
+    messages.push("Password must be at least 8 characters long.");
 }
 
 //display feedback
-if (!isValid){
+feedbackdiv.style.display='block'
+if (isValid){
     feedbackdiv.textContent= "Registration successful!";
     feedbackdiv.style.color='#28a745';
 } else {
