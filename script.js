@@ -39,13 +39,13 @@ if (password.length <8){
 }
 
 //display feedback
-feedbackdiv.style.display='block'
+feedbackDiv.style.display='block'
 if (isValid){
-    feedbackdiv.textContent= "Registration successful!";
-    feedbackdiv.style.color='#28a745';
+    feedbackDiv.textContent= "Registration successful!";
+    feedbackDiv.style.color='#28a745';
 } else {
-    feedbackdiv.innerHTML= messages.join('<br>');
-    feedbackdiv.style.color='#dc3545';
+    feedbackDiv.innerHTML= messages.join('<br>');
+    feedbackDiv.style.color='#dc3545';
 }
 });
 
