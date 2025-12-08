@@ -40,7 +40,7 @@ if (password.length <6){
 
 //display feedback
 if (!isValid){
-    feedbackdiv.textContent= "Registration Successful!";
+    feedbackdiv.textContent= "Registration successful!";
     feedbackdiv.style.color='#28a745';
 } else {
     feedbackdiv.innerHTML= messages.join('<br>');
