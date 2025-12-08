@@ -8,7 +8,7 @@
 </head>
 <body>
    <form id="registration-form">
-    <label for="username">Username:</label>
+    <label for="username">username:</label>
     <input type="text" id="username" required>
 
     <label for="email">Email:</label>
@@ -21,44 +21,6 @@
     <div id="form-feedback">
     </div>
    </form>
-   <script src="script.js">
-    const form= document.getElementById('registration form');
-//validate user name
-
-const usernameInput= document.getElementById('username');
-const usernameError= document.getElementById('usernameError');
-
-if (usernameInput.value.length <3 ){
-    usernameError.textContent="Username must be at least 3 characters.";
-    return;
-} else{
-    usernameError.text.content(' ');
-}
-
-//validate email
-const emailInput= document.getElementById('email');
-const emailError= document.getElementById('emailError');
-
-if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(emailInput.value)) {
-        emailError.textContent = 'Please enter a valid email address.';
-        return;
-      } else {
-        emailError.textContent = ' ';
-      }
-
-// validate password
-  const passwordInput= document.getElementById('password');
-  const passwordError= document.getElementById('passwordError');
-
-  if(passwordInput.value.length <6 ){
-    passwordError.textContent='Password must be at least six characters long ' ;
-    return;
-  } else { 
-    passswordError.textContent=' ' ;
-  }
-
-  //if all validation passes, submit form
-form.submit();
-   </script>
+   <script src="script.js"></script>
 </body>
 </html>
