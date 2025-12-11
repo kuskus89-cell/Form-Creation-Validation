@@ -27,6 +27,6 @@ users.forEach(user => {
 
 } catch (error) {
     dataContainer.innerHTML = " ";
- dataContainer.textContent = 'Faile to load user data';
+ dataContainer.textContent = 'Failed to load user data';
 }
 }
